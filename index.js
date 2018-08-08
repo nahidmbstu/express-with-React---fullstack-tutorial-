@@ -23,9 +23,9 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// app.get("/", (req, res, next) => {
-//   res.send({ Name: "Nahid" });
-// });
+app.get("/", (req, res, next) => {
+  res.send({ Name: "Nahid" });
+});
 
 require("./routes/authRoutes")(app);
 
